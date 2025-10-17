@@ -1,0 +1,23 @@
+{
+  "honeypot": {
+    "bind_ip": "127.0.0.1",
+    "ports": [8022, 8080, 33060],
+    "log_path": "data/honeypot.log"
+  },
+  "sids": {
+    "alert_log": "data/alerts.log",
+    "scan_ports": 5,
+    "scan_window": 15,
+    "burst_hits": 10,
+    "burst_window": 10
+  },
+  "meta": {
+    "author": "Robert Kralle",
+    "project": "CYB333_FinalProject_Hybrid_IDS_Honeypot",
+    "due_date": "October 26th, 2025",
+    "description": "Configuration file defining honeypot binding, logging paths, and IDS thresholds for automated security event detection."
+  }
+}
+
+
+
