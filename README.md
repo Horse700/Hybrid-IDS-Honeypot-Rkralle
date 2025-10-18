@@ -77,3 +77,33 @@ for /L %i in (1,1,12) do curl -s http://127.0.0.1:8080/test%i >NUL
 When finished, deactivate the virtual enviroment:
 ```bash
 deactivate
+
+---
+
+## 7. Troubleshooting & Notes
+
+- If you see a **PowerShell script execution error** when activating the virtual environment, run:
+  ```powershell
+  Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+Then try activating again with:
+venv\Scripts\Activate.ps1
+
+Ensure Python and pip are installed and added to your system PATH:
+```bash
+python --version
+pip --version
+
+If log files (data/honeypot.log or data/alerts.log) do not appear, make sure the /data folder exists in your project directory.
+
+To reset the enviroment, you can delete the venv/ folder and recreate it:
+```bash
+python -m venv venv
+
+```
+
+---
+
+**Author:** Robert Kralle  
+**Project:** CYB333 Final Project – Hybrid IDS + Honeypot  
+**Last Updated:** October 2025
