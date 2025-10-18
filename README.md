@@ -46,7 +46,7 @@ Start the honeypot listener to capture incoming traffic:
 ```bash
 python honeypot.py
 
-Logs are written to data/honeypot.py
+Logs are written to data/honeypot.log
 
 **Example Log Output:**
 2025-10-17T14:45:00.116822,127.0.0.1,60145,8080,83,GET /test1 HTTP/1.1
